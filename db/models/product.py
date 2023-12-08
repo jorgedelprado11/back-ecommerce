@@ -4,10 +4,10 @@ from typing import Optional
 
 
 class Product(BaseModel):
-    id: Optional[str]
+    id: str | None = None
     nombre: str
     categoria: str
     precio: int | float
     stock: int
     imagenes: list
-    caracteristicas: Optional[dict]
+    caracteristicas: dict | None = None
