@@ -1,7 +1,9 @@
-fastapi
+fastapi==0.104.0
 python-jose
 passlib
 bcrypt
 pymongo
 python-multipart
 bson
+uvicorn
+pydantic
