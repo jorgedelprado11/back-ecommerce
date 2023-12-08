@@ -1,12 +1,12 @@
 {
-    "build": {
-      "src": "Back-Ecommerce/main.py",
-      "use": "@vercel/python"
-    },
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "Back-Ecommerce/main.py"
-      }
-    ]
-  }
+  "build": {
+    "src": "app/api.py",
+    "use": "@vercel/python"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app/api.py"
+    }
+  ]
+}
