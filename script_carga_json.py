@@ -20,6 +20,7 @@ def data_products():
 
 
 def cargar_datos(product: Product):
+    product['precio'] = round((product['precio'] / 710), 2)
     product = dict(product)
     del product['id']
     id = db_client.products.insert_one(product).inserted_id
@@ -31,10 +32,10 @@ def cargar_datos(product: Product):
 
 
 def cargar_productos():
-    contador = 0
+    # contador = 0
     products = data_products()
     for product in products:
-        contador += 1
+        # contador += 1
         cargar_datos(product)
     #     print(product)
     # print(contador)

@@ -16,5 +16,4 @@ def product_schema(product) -> Product:
 
 
 def products_schema(products) -> list:
-
     return [product_schema(product) for product in products]

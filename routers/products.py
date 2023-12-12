@@ -1,5 +1,4 @@
 from fastapi import APIRouter, status, HTTPException
-from fastapi.responses import JSONResponse
 from db.models.product import Product
 from db.schemas.product import product_schema, products_schema
 from db.client import db_client
