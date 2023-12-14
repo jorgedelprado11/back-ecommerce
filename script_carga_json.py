@@ -7,11 +7,11 @@ import requests
 
 
 def data_products():
-    path_name = "C:\\Users\\Jorge\\Desktop\\Back-Ecommerce\\data_products.json"
+    path_name = "C:\\Users\\Jorge\\Desktop\\Ecommerce\\Back-Ecommerce\\data_products.json"
 
     if os.path.isfile(path_name):
         print("File exists")
-        with open(path_name, 'r') as archivo:
+        with open(path_name, 'r', encoding='utf-8') as archivo:
             datos = archivo.read()
             products = json.loads(datos)['products']
             return products
